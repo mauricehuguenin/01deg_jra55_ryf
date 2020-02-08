@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
 
 Tidy up restart files, keeping only the most recent 6 restarts and the first 
