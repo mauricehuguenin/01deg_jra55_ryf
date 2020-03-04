@@ -45,7 +45,7 @@ collate:
 runlog: true
 stacksize: unlimited
 restart_freq: 1  # use tidy_restarts.py instead
-mpirun: -mca coll_hcoll_enable 1  ##--mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
+###mpirun: -mca coll_hcoll_enable 1  ##--mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
 qsub_flags: -W umask=027 
 storage:
       gdata:
