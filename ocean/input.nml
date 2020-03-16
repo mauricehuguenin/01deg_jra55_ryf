@@ -551,8 +551,8 @@
     vert_diff_back_via_max = .true.
     vert_mix_scheme = 'kpp_mom4p1'
     j09_diffusivity = .true.
-    j09_bgmin = 0.0e-6
-    j09_bgmax = 0.0e-6
+    j09_bgmin = 5.0e-6
+    j09_bgmax = 5.0e-6
     j09_lat = 20.0
 /
 
