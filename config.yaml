@@ -47,7 +47,7 @@ runlog: true
 stacksize: unlimited
 restart_freq: 1  # use tidy_restarts.py instead
 ###mpirun: -mca coll_hcoll_enable 1  ##--mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
-qsub_flags: -lother=hyperthread -W umask=027 
+qsub_flags: -W umask=027 
 storage:
       gdata:
           - ua8
@@ -56,7 +56,7 @@ storage:
 platform:
     nodesize: 48
 mpi:
-    module: openmpi/4.0.1
+    module: openmpi/4.0.2
 
 
 # DANGER! Do not uncomment this without checking the script is synching 
