@@ -55,9 +55,6 @@ storage:
 # set number of cores per node (28 for normalbw, 48 for normal on gadi)
 platform:
     nodesize: 48
-mpi:
-    module: openmpi/4.0.2
-
 
 # DANGER! Do not uncomment this without checking the script is synching 
 # to the correct location!
