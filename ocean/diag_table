@@ -88,11 +88,11 @@ ACCESS-OM2-01
 # 2d fields - monthly output
 "ocean_model","sea_level","sea_level",        "ocean_month","all",.true.,"none",2
 "ocean_model","sea_level_sq","sea_levelsq",        "ocean_month","all",.true.,"none",2
-"ocean_model","surface_temp","surface_temp",     "ocean_month","all",.true.,"none",2
-"ocean_model","surface_salt","surface_salt",     "ocean_month","all",.true.,"none",2
+# "ocean_model","surface_temp","surface_temp",     "ocean_month","all",.true.,"none",2
+# "ocean_model","surface_salt","surface_salt",     "ocean_month","all",.true.,"none",2
 "ocean_model","mld","mld",                         "ocean_month","all",.true.,"none",2
-#"ocean_model","pme_river","pme_river",             "ocean_month","all",.true.,"none",2
-"ocean_model","pme_net","pme_net",                     "ocean_month","all",.true.,"none",2
+"ocean_model","pme_river","pme_river",             "ocean_month","all",.true.,"none",2
+# "ocean_model","pme_net","pme_net",                     "ocean_month","all",.true.,"none",2
 #"ocean_model","river","river",             "ocean_month","all",.true.,"none",2
 #"ocean_model","runoff","runoff",             "ocean_month","all",.true.,"none",2
 #"ocean_model","evap","evap",             "ocean_month","all",.true.,"none",2
