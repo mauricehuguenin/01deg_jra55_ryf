@@ -365,7 +365,7 @@
     zero_net_water_couple_restore = .true.
     zero_net_water_coupler = .true.
     zero_net_water_restore = .true.
-    zero_surface_stress = .false.
+    zero_surface_stress = .true.
     zero_water_fluxes = .false.
 /
 

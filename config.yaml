@@ -23,7 +23,8 @@ submodels:
 
     - name: ocean
       model: mom
-      exe: /g/data/ik11/inputs/access-om2/bin/fms_ACCESS-OM_97e3429_libaccessom2_1bb8904.x
+#      exe: /g/data/ik11/inputs/access-om2/bin/fms_ACCESS-OM_97e3429_libaccessom2_1bb8904.x
+      exe: /g/data/e14/rmh561/access-om2/bin/fms_ACCESS-OM_ce6567d_libaccessom2_1bb8904.x
       input: /g/data/ik11/inputs/access-om2/input_08022019/mom_01deg
       ncpus: 4358
 
@@ -35,27 +36,26 @@ submodels:
 
 # Collation
 collate:
-  walltime: 10:00:00
-  mem: 192GB
+  mpi: true
+  walltime: 1:00:00
+  mem: 16GB
   ncpus: 4
-  queue: normal
-  exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine
+  queue: express
+  exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine-fast
 
 # Misc
 runlog: true
 stacksize: unlimited
 restart_freq: 1  # use tidy_restarts.py instead
 ###mpirun: -mca coll_hcoll_enable 1  ##--mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
-qsub_flags: -lother=hyperthread -W umask=027 
+qsub_flags: -W umask=027 
 storage:
       gdata:
           - ua8
+          - e14
 # set number of cores per node (28 for normalbw, 48 for normal on gadi)
 platform:
     nodesize: 48
-mpi:
-    module: openmpi/4.0.1
-
 
 # DANGER! Do not uncomment this without checking the script is synching 
 # to the correct location!
