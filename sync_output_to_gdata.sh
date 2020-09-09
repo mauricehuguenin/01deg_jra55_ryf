@@ -2,15 +2,15 @@
 #PBS -q express
 #PBS -l ncpus=1
 #PBS -l wd
-#PBS -l storage=gdata/hh5+scratch/x77
+#PBS -l storage=gdata/hh5+scratch/x77+gdata/e14
 #PBS -l walltime=4:00:00,mem=2GB
-#PBS -P v45
+#PBS -P e14
 #PBS -N output_to_gdata
 
 # Set this directory to something in /g/data3/hh5/tmp/cosima/
 # Make a unique path for your set of runs.
 # DOUBLE-CHECK IT IS UNIQUE SO YOU DON'T OVERWRITE EXISTING OUTPUT!
-GDATADIR=/g/data/hh5/tmp/cosima/access-om2-01/01deg_jra55v13_ryf9091
+GDATADIR=/g/data/e14/rmh561/access-om2/archive/01deg_jra55_ryf/
 
 mkdir -p ${GDATADIR}
 cd archive
