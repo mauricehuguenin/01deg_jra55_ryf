@@ -184,7 +184,10 @@ ACCESS-OM2-01
 #"ocean_model","temp_xflux_submeso_int_z","temp_xflux_submeso_int_z",                   "ocean_month","all",.true.,"none",2
 
 # 2d fields - daily output
-# "ocean_model", "eta_t", "eta_t", "ocean_daily","all",.true.,"none",2
+"ocean_model", "eta_t", "eta_t", "ocean_daily","all",.true.,"none",2
+"ocean_model", "u", "u", "ocean_daily","all",.true.,"none",2
+"ocean_model", "v", "v", "ocean_daily","all",.true.,"none",2
+"ocean_model","aiso_bih","aiso_bih",    "ocean_daily","all",.true.,"none",2
 # "ocean_model", "surface_temp", "surface_temp", "ocean_daily","all",.true.,"none",2
 # "ocean_model", "mld", "mld", "ocean_daily","all",.true.,"none",2
 # "ocean_model", "u_surf", "u_surf", "ocean_daily","all",.true.,"none",2
