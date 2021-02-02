@@ -73,7 +73,24 @@ elon = 360.0
 #/
 
 # added by AEK: full depth Rayleigh damping in Kara Strait
+# above added by RMH: full depth Rayleigh damping around Severny Island
 "rayleigh_damp_table","ocean_mod","rayleigh_damp_table"
+"rayleigh","SvIslnd","itable=3225,jtable=2613,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3225,jtable=2614,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3225,jtable=2615,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3226,jtable=2615,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3224,jtable=2614,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3224,jtable=2615,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3224,jtable=2616,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3223,jtable=2615,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3223,jtable=2616,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3223,jtable=2617,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3222,jtable=2616,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3222,jtable=2617,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3222,jtable=2618,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3221,jtable=2617,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3221,jtable=2618,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
+"rayleigh","SvIslnd","itable=3221,jtable=2619,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
 "rayleigh","KaraStr","itable=3335,jtable=2380,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
 "rayleigh","KaraStr","itable=3336,jtable=2380,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
 "rayleigh","KaraStr","itable=3337,jtable=2380,ktable_1=1,ktable_2=22,rayleigh_damp_table=5400"
