@@ -57,6 +57,10 @@ storage:
 platform:
     nodesize: 48
 
+userscripts:
+    error: resub.sh
+    run: rm -f resubmit.count
+
 # DANGER! Do not uncomment this without checking the script is synching 
 # to the correct location!
 # postscript: sync_output_to_gdata.sh
