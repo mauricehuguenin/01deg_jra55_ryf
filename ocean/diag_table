@@ -13,7 +13,7 @@ ACCESS-OM2-01
 "ocean_snap",       3,  "months", 1, "days", "time",
 "ocean_wmass",      3,  "months", 1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
-"ocean_scalar",     1,  "months", 1, "days", "time",
+# "ocean_scalar",     1,  "months", 1, "days", "time",
 "ocean_heat",       3,  "months", 1, "days", "time",
 
 # aekiss extras:
@@ -215,9 +215,9 @@ ACCESS-OM2-01
 
 
 # timeseries - 1D scalar variables
-"ocean_model","ke_tot","ke_tot", "ocean_scalar","all",.true.,"none",1
+# "ocean_model","ke_tot","ke_tot", "ocean_scalar","all",.true.,"none",1
 # "ocean_model","pe_tot","pe_tot", "ocean_scalar","all",.true.,"none",1
-"ocean_model","temp_global_ave","temp_global_ave", "ocean_scalar","all",.true.,"none",1
+# "ocean_model","temp_global_ave","temp_global_ave", "ocean_scalar","all",.true.,"none",1
 # "ocean_model","salt_global_ave","salt_global_ave", "ocean_scalar","all",.true.,"none",1
 # "ocean_model","rhoave","rhoave", "ocean_scalar","all",.true.,"none",1
 # "ocean_model","temp_surface_ave","temp_surface_ave", "ocean_scalar","all",.true.,"none",1
