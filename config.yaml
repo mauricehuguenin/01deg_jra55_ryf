@@ -17,19 +17,19 @@ input: /g/data/ik11/inputs/access-om2/input_08022019/common_01deg_jra55
 submodels:
     - name: atmosphere
       model: yatm
-      exe: /g/data/ik11/inputs/access-om2/bin/yatm_1bb8904.exe
+      exe: /g/data/ik11/inputs/access-om2/bin/yatm_a227a61.exe
       input: /g/data/ik11/inputs/access-om2/input_08022019/yatm_01deg
       ncpus: 1
 
     - name: ocean
       model: mom
-      exe: /g/data/ik11/inputs/access-om2/bin/fms_ACCESS-OM_97e3429_libaccessom2_1bb8904.x
+      exe: /g/data/ik11/inputs/access-om2/bin/fms_ACCESS-OM_af3a94d_libaccessom2_a227a61.x
       input: /g/data/ik11/inputs/access-om2/input_08022019/mom_01deg
       ncpus: 4358
 
     - name: ice
       model: cice5
-      exe: /g/data/ik11/inputs/access-om2/bin/cice_auscom_3600x2700_722p_d3e8bdf_libaccessom2_1bb8904.exe
+      exe: /g/data/ik11/inputs/access-om2/bin/cice_auscom_3600x2700_722p_2572851_libaccessom2_a227a61.exe
       input: /g/data/ik11/inputs/access-om2/input_08022019/cice_01deg
       ncpus: 799
 
@@ -39,7 +39,7 @@ collate:
   mem: 192GB
   ncpus: 4
   queue: normal
-  exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine
+  exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine-fast
 
 # Misc
 runlog: true
