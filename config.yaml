@@ -1,7 +1,7 @@
 # PBS configuration
 # If submitting to a different project to your default uncomment line below 
 # and change project code as appropriate
-project: e14
+project: v45
 queue: normal
 walltime: 3:30:00
 jobname: 01deg_jra55_ryf
@@ -18,7 +18,9 @@ submodels:
     - name: atmosphere
       model: yatm
       exe: /g/data/ik11/inputs/access-om2/bin/yatm_a227a61.exe
-      input: /g/data/ik11/inputs/access-om2/input_08022019/yatm_01deg
+      input:
+            - /g/data/ik11/inputs/access-om2/input_08022019/yatm_01deg
+            - /g/data/ua8/JRA55-do/RYF/v1-3/
       ncpus: 1
 
     - name: ocean

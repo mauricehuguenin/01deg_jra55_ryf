@@ -163,7 +163,7 @@ CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 ##########
 # Field 08 : 2m air humidity
 ##########
-qair_ai qair_i 339 10800 3 a2i.nc EXPORTED
+relh_ai relh_i 339 10800 3 a2i.nc EXPORTED
 jrat cict LAG=0 SEQ=+1
 P  0  P  0
 #
