@@ -180,7 +180,7 @@
 
 &icefields_nml
     f_aice            = 'md'
-    f_aicen           = 'm'
+    f_aicen           = 'd'
     f_aisnap          = 'x'
     f_albice          = 'x'
     f_albpnd          = 'x'
@@ -193,9 +193,9 @@
     f_bounds          = .false.
     f_congel          = 'md'
     f_coszen          = 'x'
-    f_daidtd          = 'm'
-    f_daidtt          = 'm'
-    f_divu            = 'm'
+    f_daidtd          = 'd'
+    f_daidtt          = 'd'
+    f_divu            = 'd'
     f_dsnow           = 'x'
     f_dvidtd          = 'md'
     f_dvidtt          = 'md'
