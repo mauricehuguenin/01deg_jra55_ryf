@@ -9,7 +9,16 @@
     {
       "filename": "INPUT/RYF.rlds.1990_1991.nc",
       "fieldname": "rlds",
-      "cname": "lwfld_ai"
+      "cname": "lwfld_ai",
+      "perturbations": [
+        {
+          "type": "offset",
+          "dimension": "constant",
+          "value": -8,
+          "calendar": "forcing",
+          "comment": ""
+        }
+      ]
     },
     {
       "filename": "INPUT/RYF.rain.1990_1991.nc",
@@ -35,7 +44,16 @@
     {
       "filename": "INPUT/RYF.t_10.1990_1991.nc",
       "fieldname": "tas_10m",
-      "cname": "tair_ai"
+      "cname": "tair_ai",
+      "perturbations": [
+        {
+          "type": "offset",
+          "dimension": "constant",
+          "value": -1.5,
+          "calendar": "forcing",
+          "comment": ""
+        }
+      ]
     },
     {
       "filename": "INPUT/RYF.r_10.1990_1991.nc",
