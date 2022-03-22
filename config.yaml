@@ -37,8 +37,10 @@ submodels:
 
 # Collation
 collate:
-  walltime: 10:00:00
-  mem: 192GB
+  restart: true
+  mpi: true
+  walltime: 4:00:00
+  mem: 16GB
   ncpus: 4
   queue: normal
   exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine-fast
