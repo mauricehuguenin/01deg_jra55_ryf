@@ -39,8 +39,10 @@ submodels:
 
 # Collation
 collate:
-  walltime: 10:00:00
-  mem: 192GB
+  restart: true
+  mpi: true
+  walltime: 4:00:00
+  mem: 16GB
   ncpus: 4
   queue: normal
   exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine-fast
@@ -49,8 +51,10 @@ collate:
 runlog: true
 stacksize: unlimited
 restart_freq: 1  # use tidy_restarts.py instead
-###mpirun: -mca coll_hcoll_enable 1  ##--mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
-qsub_flags: -lother=hyperthread -W umask=027 
+mpirun: --mca io ompio --mca io_ompio_num_aggregators 1
+qsub_flags: -W umask=027
+env:
+    UCX_LOG_LEVEL: 'error'
 storage:
       gdata:
           - ua8
@@ -61,6 +65,6 @@ mpi:
     module: openmpi/4.0.1
 
 
-# DANGER! Do not uncomment this without checking the script is synching 
+# DANGER! Do not uncomment this without checking the script is synching
 # to the correct location!
 # postscript: sync_output_to_gdata.sh
