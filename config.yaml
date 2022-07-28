@@ -4,7 +4,7 @@
 project: e14
 queue: normal
 walltime: 3:30:00
-jobname: 01deg_Control
+jobname: 01_ENFull
 ncpus: 5180
 
 # Force payu to always find, and save, files in this short (or scratch) project directory
@@ -20,9 +20,8 @@ submodels:
       exe: /g/data/ik11/inputs/access-om2/bin/yatm_0ab7295.exe
       input:
             - /g/data/ik11/inputs/access-om2/input_08022019/yatm_01deg
-            - /g/data/ua8/JRA55-do/RYF/v1-3/
-#            - /g/data/e14/mv7494/JRA55-do-1-3/time_series/
-#            - /g/data/e14/mv7494/JRA55-do-1-3/spatial_patterns/
+#            - /g/data/ua8/JRA55-do/RYF/v1-3/
+            - /g/data/e14/mv7494/ENSOAnt_input/forcing_mean_anoms_ENFull/yr1/
       ncpus: 1
 
     - name: ocean
