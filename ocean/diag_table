@@ -40,18 +40,18 @@ ACCESS-OM2-01
 # 3d fields - monthly averages
 "ocean_model","temp","temp",            "ocean_month","all",.true.,"none",2
 "ocean_model","salt","salt",            "ocean_month","all",.true.,"none",2
-#"ocean_model","u","u",                  "ocean_month","all",.true.,"none",2
-#"ocean_model","v","v",                  "ocean_month","all",.true.,"none",2
-#"ocean_model","wt","wt",                "ocean_month","all",.true.,"none",2
+"ocean_model","u","u",                  "ocean_month","all",.true.,"none",2
+"ocean_model","v","v",                  "ocean_month","all",.true.,"none",2
+"ocean_model","wt","wt",                "ocean_month","all",.true.,"none",2
 "ocean_model","dzt","dzt",              "ocean_month","all",.true.,"none",2
 #"ocean_model","pot_rho_2","pot_rho_2",  "ocean_month","all",.true.,"none",2
 #"ocean_model","pot_rho_0","pot_rho_0",  "ocean_month","all",.true.,"none",2
-#"ocean_model","tx_trans","tx_trans",    "ocean_month","all",.true.,"none",2
-#"ocean_model","ty_trans","ty_trans",    "ocean_month","all",.true.,"none",2
-#"ocean_model","ty_trans_submeso","ty_trans_submeso",    "ocean_month","all",.true.,"none",2
-#"ocean_model","tx_trans_rho","tx_trans_rho","ocean_month","all",.true.,"none",2
+"ocean_model","tx_trans","tx_trans",    "ocean_month","all",.true.,"none",2
+"ocean_model","ty_trans","ty_trans",    "ocean_month","all",.true.,"none",2
+"ocean_model","ty_trans_submeso","ty_trans_submeso",    "ocean_month","all",.true.,"none",2
+"ocean_model","tx_trans_rho","tx_trans_rho","ocean_month","all",.true.,"none",2
 "ocean_model","ty_trans_rho","ty_trans_rho","ocean_month","all",.true.,"none",2
-#"ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso","ocean_month","all",.true.,"none",2
+"ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso","ocean_month","all",.true.,"none",2
 
 # Temperature-binned volume transports
 #"ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",1
@@ -66,9 +66,9 @@ ACCESS-OM2-01
 #"ocean_model","temp_yflux_submeso_on_nrho","temp_yflux_submeso_on_nrho", "ocean_wmass","all",.true.,"none",1
 
 # Snapshots for numerical mixing/tendency:
-#"ocean_model","temp","temp", "ocean_snap","all",.false.,"none",1
-#"ocean_model","dzt","dzt",   "ocean_snap","all",.false.,"none",1
-#"ocean_model","total_volume_seawater","total_volume_seawater" , "ocean_snap","all",.false.,"none",2
+"ocean_model","temp","temp", "ocean_snap","all",.false.,"none",1
+"ocean_model","dzt","dzt",   "ocean_snap","all",.false.,"none",1
+"ocean_model","total_volume_seawater","total_volume_seawater" , "ocean_snap","all",.false.,"none",2
 
 # Temperature-binned heat budget diagnostics
 #"ocean_model","temp_vdiffuse_diff_cbt_on_nrho","temp_vdiffuse_diff_cbt_on_nrho", "ocean_wmass","all",.true.,"none",1
@@ -101,11 +101,11 @@ ACCESS-OM2-01
 "ocean_model","sea_level_sq","sea_levelsq",        "ocean_month","all",.true.,"none",2
 "ocean_model","mld","mld",                         "ocean_month","all",.true.,"none",2
 "ocean_model","pme_river","pme_river",             "ocean_month","all",.true.,"none",2
-#"ocean_model","pme_net","pme_net",                     "ocean_month","all",.true.,"none",2
-#"ocean_model","river","river",             "ocean_month","all",.true.,"none",2
-#"ocean_model","runoff","runoff",             "ocean_month","all",.true.,"none",2
-#"ocean_model","evap","evap",             "ocean_month","all",.true.,"none",2
-#"ocean_model","melt","melt",             "ocean_month","all",.true.,"none",2
+"ocean_model","pme_net","pme_net",                     "ocean_month","all",.true.,"none",2
+"ocean_model","river","river",             "ocean_month","all",.true.,"none",2
+"ocean_model","runoff","runoff",             "ocean_month","all",.true.,"none",2
+"ocean_model","evap","evap",             "ocean_month","all",.true.,"none",2
+"ocean_model","melt","melt",             "ocean_month","all",.true.,"none",2
 #"ocean_model","fprec","fprec",                     "ocean_month","all",.true.,"none",2
 #"ocean_model","lprec","lprec",                     "ocean_month","all",.true.,"none",2
 #"ocean_model","wfimelt","wfimelt",                     "ocean_month","all",.true.,"none",2
