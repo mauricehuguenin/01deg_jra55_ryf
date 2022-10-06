@@ -86,7 +86,8 @@ ACCESS-OM2-01
 # # # Eulerian heat budget diagnostics (for check)
 "ocean_model","temp_submeso","temp_submeso"                 ,"ocean_heat","all",.true.,"none",1
 "ocean_model","temp_tendency","temp_tendency"               ,"ocean_heat","all",.true.,"none",1
-"ocean_model","temp_advection","temp_advection"             ,"ocean_heat","all",.true.,"none",1
+"ocean_model","temp_yflux_adv","temp_yflux_adv"             ,"ocean_heat","all",.true.,"none",1
+"ocean_model","temp_xflux_adv","temp_xflux_adv"             ,"ocean_heat","all",.true.,"none",2
 "ocean_model","temp_vdiffuse_diff_cbt","temp_vdiffuse_diff_cbt", "ocean_heat","all",.true.,"none",1
 "ocean_model","temp_nonlocal_KPP","temp_nonlocal_KPP", "ocean_heat","all",.true.,"none",1
 "ocean_model","sw_heat","sw_heat", "ocean_heat","all",.true.,"none",1
