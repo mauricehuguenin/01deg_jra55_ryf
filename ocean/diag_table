@@ -19,11 +19,11 @@ ACCESS-OM2-01
 "ocean_scalar",     1,  "months", 1, "days", "time",
 "ocean_heat",       1,  "months", 1, "days", "time",
 
-# specific diagnostics to check submonthly heat flux correlations
-"ocean_model", "temp", "temp", "ocean-3d-temp-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
-"ocean_model", "u", "u", "ocean-3d-u-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
-"ocean_model", "v", "v", "ocean-3d-v-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
-"ocean_model", "w", "w", "ocean-3d-w-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
+## specific diagnostics to check submonthly heat flux correlations
+#"ocean_model", "temp", "temp", "ocean-3d-temp-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
+#"ocean_model", "u", "u", "ocean-3d-u-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
+#"ocean_model", "v", "v", "ocean-3d-v-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
+#"ocean_model", "w", "w", "ocean-3d-w-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
 
 
 # Save ocean grid data once and for all
@@ -96,7 +96,7 @@ ACCESS-OM2-01
 "ocean_model","temp_advection","temp_advection"             ,"ocean_heat","all",.true.,"none",1
 "ocean_model","temp_yflux_adv","temp_yflux_adv"             ,"ocean_heat","all",.true.,"none",1
 "ocean_model","temp_xflux_adv","temp_xflux_adv"             ,"ocean_heat","all",.true.,"none",2
-"ocean_model","temp_zflux_adv","temp_zflux_adv"             ,"ocean_heat","all",.true.,"none",2
+"ocean_model","temp_zflux_adv","temp_zflux_adv"             ,"ocean_heat","all",.true.,"none",2             # hmaurice: does not seem to work
 "ocean_model","temp_vdiffuse_diff_cbt","temp_vdiffuse_diff_cbt", "ocean_heat","all",.true.,"none",1
 "ocean_model","temp_nonlocal_KPP","temp_nonlocal_KPP", "ocean_heat","all",.true.,"none",1
 "ocean_model","sw_heat","sw_heat", "ocean_heat","all",.true.,"none",1
