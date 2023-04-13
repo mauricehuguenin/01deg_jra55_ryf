@@ -96,6 +96,7 @@ ACCESS-OM2-01
 "ocean_model","temp_advection","temp_advection"             ,"ocean_heat","all",.true.,"none",1
 "ocean_model","temp_yflux_adv","temp_yflux_adv"             ,"ocean_heat","all",.true.,"none",1
 "ocean_model","temp_xflux_adv","temp_xflux_adv"             ,"ocean_heat","all",.true.,"none",2
+# hmaurice: adding vertical advective heat flux for check
 "ocean_model","temp_zflux_adv","temp_zflux_adv"             ,"ocean_heat","all",.true.,"none",2             # hmaurice: does not seem to work
 "ocean_model","temp_vdiffuse_diff_cbt","temp_vdiffuse_diff_cbt", "ocean_heat","all",.true.,"none",1
 "ocean_model","temp_nonlocal_KPP","temp_nonlocal_KPP", "ocean_heat","all",.true.,"none",1
