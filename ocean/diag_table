@@ -23,8 +23,10 @@ ACCESS-OM2-01
 "ocean_model", "temp", "temp", "ocean_daily", "all", "average", "none", 2
 "ocean_model", "u", "u", "ocean_daily", "all", "average", "none", 2
 "ocean_model", "v", "v", "ocean_daily", "all", "average", "none", 2
-"ocean_model", "w", "w", "ocean_daily", "all", "average", "none", 2
-
+"ocean_model", "wt", "wt", "ocean_daily", "all", "average", "none", 2
+"ocean_model","temp_yflux_adv","temp_yflux_adv"             ,"ocean_daily","all",.true.,"none",2
+"ocean_model","temp_xflux_adv","temp_xflux_adv"             ,"ocean_daily","all",.true.,"none",2
+"ocean_model","temp_zflux_adv","temp_zflux_adv"             ,"ocean_daily","all",.true.,"none",2
 
 # Save ocean grid data once and for all
 "ocean_model","geolon_t","geolon_t", "ocean_grid","all",.false.,"none",2
@@ -97,7 +99,7 @@ ACCESS-OM2-01
 "ocean_model","temp_yflux_adv","temp_yflux_adv"             ,"ocean_heat","all",.true.,"none",1
 "ocean_model","temp_xflux_adv","temp_xflux_adv"             ,"ocean_heat","all",.true.,"none",2
 # hmaurice: adding vertical advective heat flux for check
-"ocean_model","temp_zflux_adv","temp_zflux_adv"             ,"ocean_heat","all",.true.,"none",2             # hmaurice: does not seem to work
+"ocean_model","temp_zflux_adv","temp_zflux_adv"             ,"ocean_heat","all",.true.,"none",2
 "ocean_model","temp_vdiffuse_diff_cbt","temp_vdiffuse_diff_cbt", "ocean_heat","all",.true.,"none",1
 "ocean_model","temp_nonlocal_KPP","temp_nonlocal_KPP", "ocean_heat","all",.true.,"none",1
 "ocean_model","sw_heat","sw_heat", "ocean_heat","all",.true.,"none",1
