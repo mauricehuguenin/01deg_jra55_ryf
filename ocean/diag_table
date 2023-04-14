@@ -20,10 +20,10 @@ ACCESS-OM2-01
 "ocean_heat",       1,  "months", 1, "days", "time",
 
 ## specific diagnostics to check submonthly heat flux correlations
-#"ocean_model", "temp", "temp", "ocean-3d-temp-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
-#"ocean_model", "u", "u", "ocean-3d-u-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
-#"ocean_model", "v", "v", "ocean-3d-v-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
-#"ocean_model", "w", "w", "ocean-3d-w-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
+"ocean_model", "temp", "temp", "ocean_daily", "all", "average", "none", 2
+"ocean_model", "u", "u", "ocean_daily", "all", "average", "none", 2
+"ocean_model", "v", "v", "ocean_daily", "all", "average", "none", 2
+"ocean_model", "w", "w", "ocean_daily", "all", "average", "none", 2
 
 
 # Save ocean grid data once and for all
