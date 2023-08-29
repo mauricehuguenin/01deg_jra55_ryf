@@ -19,6 +19,15 @@ ACCESS-OM2-01
 "ocean_scalar",     1,  "months", 1, "days", "time",
 "ocean_heat",       1,  "months", 1, "days", "time",
 
+# hmaurice: specific diagnostics to check submonthly heat flux correlations
+#"ocean_model", "temp", "temp", "ocean_daily", "all", "average", "none", 2
+#"ocean_model", "u", "u", "ocean_daily", "all", "average", "none", 2
+#"ocean_model", "v", "v", "ocean_daily", "all", "average", "none", 2
+#"ocean_model", "wt", "wt", "ocean_daily", "all", "average", "none", 2
+#"ocean_model","temp_yflux_adv","temp_yflux_adv"             ,"ocean_daily","all",.true.,"none",2
+#"ocean_model","temp_xflux_adv","temp_xflux_adv"             ,"ocean_daily","all",.true.,"none",2
+#"ocean_model","temp_zflux_adv","temp_zflux_adv"             ,"ocean_daily","all",.true.,"none",2
+
 # Save ocean grid data once and for all
 "ocean_model","geolon_t","geolon_t", "ocean_grid","all",.false.,"none",2
 "ocean_model","geolat_t","geolat_t", "ocean_grid","all",.false.,"none",2
@@ -44,7 +53,6 @@ ACCESS-OM2-01
 "ocean_model","v","v",                  "ocean_month","all",.true.,"none",2
 "ocean_model","wt","wt",                "ocean_month","all",.true.,"none",2
 "ocean_model","dzt","dzt",              "ocean_month","all",.true.,"none",2
-"ocean_model","dzu","dzu",              "ocean_month","all",.true.,"none",2
 #"ocean_model","pot_rho_2","pot_rho_2",  "ocean_month","all",.true.,"none",2
 #"ocean_model","pot_rho_0","pot_rho_0",  "ocean_month","all",.true.,"none",2
 "ocean_model","tx_trans","tx_trans",    "ocean_month","all",.true.,"none",2
@@ -88,6 +96,10 @@ ACCESS-OM2-01
 "ocean_model","temp_submeso","temp_submeso"                 ,"ocean_heat","all",.true.,"none",1
 "ocean_model","temp_tendency","temp_tendency"               ,"ocean_heat","all",.true.,"none",1
 "ocean_model","temp_advection","temp_advection"             ,"ocean_heat","all",.true.,"none",1
+"ocean_model","temp_yflux_adv","temp_yflux_adv"             ,"ocean_heat","all",.true.,"none",1
+"ocean_model","temp_xflux_adv","temp_xflux_adv"             ,"ocean_heat","all",.true.,"none",2
+# hmaurice: adding vertical advective heat flux for check
+"ocean_model","temp_zflux_adv","temp_zflux_adv"             ,"ocean_heat","all",.true.,"none",2
 "ocean_model","temp_vdiffuse_diff_cbt","temp_vdiffuse_diff_cbt", "ocean_heat","all",.true.,"none",1
 "ocean_model","temp_nonlocal_KPP","temp_nonlocal_KPP", "ocean_heat","all",.true.,"none",1
 "ocean_model","sw_heat","sw_heat", "ocean_heat","all",.true.,"none",1
