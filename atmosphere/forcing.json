@@ -38,10 +38,9 @@
 	"cname": "tair_ai",
 	"perturbations": [
         {
-          "type": "separable",
-          "dimension": ["temporal", "spatial"],
-            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc",
-		      "INPUT/sp_IPO_time_series_1958-2022.nc"]
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
           "calendar": "forcing",
           "comment": "time series[t] * constant spatial pattern[x,y]"
 	}
