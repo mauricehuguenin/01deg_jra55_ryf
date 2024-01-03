@@ -1,0 +1,146 @@
+{
+  "description": "JRA55-do V1.3.0 RYF 1990-91 forcing",
+  "inputs": [
+    {
+      "filename": "INPUT/RYF.rsds.1990_1991.nc",
+      "fieldname": "rsds",
+        "cname": "swfld_ai",
+        "perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+        }
+      ]
+    },
+    {
+      "filename": "INPUT/RYF.rlds.1990_1991.nc",
+      "fieldname": "rlds",
+        "cname": "lwfld_ai",
+        "perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+        }
+      ]
+    },
+    {
+      "filename": "INPUT/RYF.rain.1990_1991.nc",
+      "fieldname": "prrn",
+        "cname": "rain_ai",
+        "perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+        }
+      ]
+    },
+    {
+      "filename": "INPUT/RYF.snow.1990_1991.nc",
+      "fieldname": "prsn",
+        "cname": "snow_ai",
+        "perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+        }
+      ]
+    },
+    {
+      "filename": "INPUT/RYF.slp.1990_1991.nc",
+      "fieldname": "psl",
+        "cname": "press_ai",
+        "perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+        }
+      ]
+    },
+    {
+      "filename": "INPUT/RYF.runoff_all.1990_1991.nc",
+      "fieldname": "friver",
+        "cname": "runof_ai",
+        "domain": "land",
+        "perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022_friver.nc", "INPUT/sp_IPO_time_series_1958-2022_friver.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+        }
+      ]
+    },
+    {
+      "filename": "INPUT/RYF.t_10.1990_1991.nc",
+      "fieldname": "tas_10m",
+	"cname": "tair_ai",
+	"perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+	}
+      ]
+    },
+    {
+      "filename": "INPUT/RYF.q_10.1990_1991.nc",
+      "fieldname": "huss_10m",
+        "cname": "qair_ai",
+        "perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+        }
+      ]
+    },
+    {
+      "filename": "INPUT/RYF.u_10.1990_1991.nc",
+      "fieldname": "uas_10m",
+        "cname": "uwnd_ai",
+        "perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+        }
+      ]
+    },
+    {
+      "filename": "INPUT/RYF.v_10.1990_1991.nc",
+      "fieldname": "vas_10m",
+        "cname": "vwnd_ai",
+        "perturbations": [
+        {
+            "type": "separable",
+            "dimension": ["temporal", "spatial"],
+            "value": ["INPUT/ts_IPO_time_series_1958-2022.nc", "INPUT/sp_IPO_time_series_1958-2022.nc"],
+          "calendar": "forcing",
+          "comment": "time series[t] * constant spatial pattern[x,y]"
+        }
+      ]
+    }
+  ]
+}
