@@ -49,6 +49,8 @@ ACCESS-OM2-01
 # 3d fields - monthly averages
 "ocean_model","temp","temp",            "ocean_month","all",.true.,"none",2
 "ocean_model","salt","salt",            "ocean_month","all",.true.,"none",2
+"ocean_model","surface_temp","surface_temp",            "ocean_month","all",.true.,"none",2
+"ocean_model","surface_salt","surface_salt",            "ocean_month","all",.true.,"none",2
 "ocean_model","u","u",                  "ocean_month","all",.true.,"none",2
 "ocean_model","v","v",                  "ocean_month","all",.true.,"none",2
 "ocean_model","wt","wt",                "ocean_month","all",.true.,"none",2
@@ -123,9 +125,9 @@ ACCESS-OM2-01
 #"ocean_model","lprec","lprec",                     "ocean_month","all",.true.,"none",2
 #"ocean_model","wfimelt","wfimelt",                     "ocean_month","all",.true.,"none",2
 #"ocean_model","wfiform","wfiform",                     "ocean_month","all",.true.,"none",2
-#"ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore","ocean_month","all",.true.,"none",2
-#"ocean_model","sfc_salt_flux_ice","sfc_salt_flux_ice","ocean_month","all",.true.,"none",2
-#"ocean_model","sfc_salt_flux_coupler","sfc_salt_flux_coupler","ocean_month","all",.true.,"none",2
+"ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore","ocean_month","all",.true.,"none",2
+"ocean_model","sfc_salt_flux_ice","sfc_salt_flux_ice","ocean_month","all",.true.,"none",2
+"ocean_model","sfc_salt_flux_coupler","sfc_salt_flux_coupler","ocean_month","all",.true.,"none",2
 "ocean_model","net_sfc_heating","net_sfc_heating", "ocean_month","all",.true.,"none",2
 "ocean_model","frazil_3d_int_z","frazil_3d_int_z", "ocean_month","all",.true.,"none",2
 "ocean_model","swflx","swflx", "ocean_month","all",.true.,"none",2
