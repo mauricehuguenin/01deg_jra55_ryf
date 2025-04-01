@@ -18,6 +18,7 @@
 /
 
 &diag_manager_nml
+    max_axes = 100,
     debug_diag_manager = .false.
     issue_oor_warnings = .true.
 /

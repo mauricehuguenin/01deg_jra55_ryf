@@ -1,14 +1,19 @@
 # PBS configuration
 # If submitting to a different project to your default uncomment line below 
 # and change project code as appropriate
-project: e14
+project: ol01
 queue: normal
-walltime: 3:30:00
-jobname: AKM_IPOCtrl
+walltime: 5:00:00
+jobname: ryf_rerun
 ncpus: 5180
+storage:
+        gdata:
+                - v45
+                - ik11
+                - x77
 
 # Force payu to always find, and save, files in this short (or scratch) project directory
-shortpath: /scratch/e14
+shortpath: /scratch/v45
 
 # Model configuration
 name: common
@@ -18,18 +23,14 @@ submodels:
     - name: atmosphere
       model: yatm
       exe: /g/data/ik11/inputs/access-om2/bin/yatm_1bb8904.exe
-      input:
-            - /g/data/ik11/inputs/access-om2/input_08022019/yatm_01deg
-#            - /g/data/e14/mv7494/IPOAnt_input/positive_phase_fields
-            - /g/data/ua8/JRA55-do/RYF/v1-3/
-#            - /g/data/e14/mv7494/IPOAnt_input/time_series/
-#            - /g/data/e14/mv7494/IPOAnt_input/spatial_patterns/
+      input: /g/data/ik11/inputs/access-om2/input_08022019/yatm_01deg
       ncpus: 1
 
     - name: ocean
       model: mom
       exe: /g/data/ik11/inputs/access-om2/bin/fms_ACCESS-OM_97e3429_libaccessom2_1bb8904.x
-      input: /g/data/ik11/inputs/access-om2/input_08022019/mom_01deg
+      input:
+          - /g/data/ik11/inputs/access-om2/input_08022019/mom_01deg
       ncpus: 4358
 
     - name: ice
@@ -40,10 +41,10 @@ submodels:
 
 # Collation
 collate:
-  restart: true
-  mpi: true
-  walltime: 4:00:00
-  mem: 16GB
+  restart:  true
+  mpi:  true
+  walltime: 1:00:00
+  mem: 64GB
   ncpus: 4
   queue: normal
   exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine-fast
@@ -52,13 +53,11 @@ collate:
 runlog: true
 stacksize: unlimited
 restart_freq: 1  # use tidy_restarts.py instead
-mpirun: --mca io ompio --mca io_ompio_num_aggregators 1
-qsub_flags: -W umask=027
-env:
-    UCX_LOG_LEVEL: 'error'
-storage:
-      gdata:
-          - ua8
+###mpirun: -mca coll_hcoll_enable 1  ##--mca pml yalla -x MXM_LOG_FILE=$PBS_JOBFS/mxm.log
+qsub_flags: -W umask=027 
+#storage:
+#      gdata:
+#          - ua8
 # set number of cores per node (28 for normalbw, 48 for normal on gadi)
 platform:
     nodesize: 48
@@ -66,6 +65,6 @@ mpi:
     module: openmpi/4.0.1
 
 
-# DANGER! Do not uncomment this without checking the script is synching
+# DANGER! Do not uncomment this without checking the script is synching 
 # to the correct location!
-# postscript: sync_output_to_gdata.sh
+#postscript: sync_output_to_gdata.sh
