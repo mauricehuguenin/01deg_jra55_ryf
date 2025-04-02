@@ -33,8 +33,6 @@ ACCESS-OM2-01
 "ocean_model","hu","hu",             "ocean_grid","all",.false.,"none",2
 "ocean_model","dxt","dxt",           "ocean_grid","all",.false.,"none",2
 "ocean_model","dyt","dyt",           "ocean_grid","all",.false.,"none",2
-# hmaurice
-"ocean_model","dht","dht",           "ocean_grid","all",.false.,"none",2
 "ocean_model","dxu","dxu",           "ocean_grid","all",.false.,"none",2
 "ocean_model","dyu","dyu",           "ocean_grid","all",.false.,"none",2
 "ocean_model","area_t","area_t",     "ocean_grid","all",.false.,"none",2
@@ -52,9 +50,7 @@ ACCESS-OM2-01
 "ocean_model","v","v",                  "ocean","all",.true.,"none",2
 "ocean_model","wt","wt",                "ocean","all",.true.,"none",2
 "ocean_model","dzt","dzt",              "ocean","all",.true.,"none",2
-# hmaurice:
 "ocean_model","pot_rho_0","pot_rho_0",  "ocean","all",.true.,"none",2
-
 "ocean_model","pot_rho_2","pot_rho_2",  "ocean","all",.true.,"none",2
 "ocean_model","tx_trans","tx_trans",    "ocean","all",.true.,"none",2
 "ocean_model","ty_trans","ty_trans",    "ocean","all",.true.,"none",2
@@ -92,11 +88,8 @@ ACCESS-OM2-01
 "ocean_model","lw_heat","lw_heat", "ocean_month","all",.true.,"none",2
 "ocean_model","sens_heat","sens_heat", "ocean_month","all",.true.,"none",2
 "ocean_model","evap_heat","evap_heat", "ocean_month","all",.true.,"none",2
-# hmaurice
-#"ocean_model","net_sfc_heating","net_sfc_heating", "ocean_month","all",.true.,"none",2
-
 "ocean_model","fprec_melt_heat","fprec_melt_heat", "ocean_month","all",.true.,"none",2
-#"ocean_model","sfc_hflux_from_runoff","sfc_hflux_from_runoff", "ocean_month","all",.true.,"none",2
+"ocean_model","sfc_hflux_from_runoff","sfc_hflux_from_runoff", "ocean_month","all",.true.,"none",2
 "ocean_model","sfc_hflux_coupler","sfc_hflux_coupler"                          ,"ocean_month","all",.true.,"none",2
 "ocean_model","sfc_hflux_pme","sfc_hflux_pme", "ocean_month","all",.true.,"none",2
 "ocean_model","frazil_3d_int_z","frazil_3d_int_z", "ocean_month","all",.true.,"none",2
