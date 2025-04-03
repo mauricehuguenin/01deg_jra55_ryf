@@ -4,7 +4,7 @@
 project: e14
 queue: normal
 walltime: 5:00:00
-jobname: ryf_rerun
+jobname: exe_IPO2sNeg
 ncpus: 5180
 #storage:
 #        gdata:
@@ -25,8 +25,8 @@ submodels:
       exe: /g/data/ik11/inputs/access-om2/bin/yatm_1bb8904.exe
       input:
             - /g/data/ik11/inputs/access-om2/input_08022019/yatm_01deg
-#           - /g/data/e14/mv7494/IPOAnt_input/positive_phase_fields
-            - /g/data/ua8/JRA55-do/RYF/v1-3/
+            - /g/data/e14/mv7494/IPOAnt_input/2sigma_negative_phase_fields
+#            - /g/data/ua8/JRA55-do/RYF/v1-3/
       ncpus: 1
 
     - name: ocean
